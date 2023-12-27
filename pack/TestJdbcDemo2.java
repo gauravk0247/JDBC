@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class TestJdbcDemo2 {
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) {
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("My Driver is loaded");
@@ -31,14 +31,14 @@ public class TestJdbcDemo2 {
 			String[] str = line.split(",");
 			int cid = Integer.parseInt(str[0]);
 			String name = str[1];
-			double phone = Double.parseDouble(str[2]);
+			long phone = Long.parseLong(str[2]);
 			String address = str[3];
 			String mailId = str[4];
 			String insertQuery = "insert into customerinfo values("+cid+""+",'"+name+",'"+","+phone+""+",'"+address+"'"+",'"+mailId+"')";
 			int status = stmt.executeUpdate(insertQuery);
 		}
 		
-		}catch(NumberFormatException | FileNotFoundException | ClassNotFoundException | SQLException e) {
+		}catch(  ClassNotFoundException | SQLException |IOException e) {
 			System.out.println(e);
 		}
 	}
