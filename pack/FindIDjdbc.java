@@ -14,7 +14,7 @@ public class FindIDjdbc {
 		Connection con = JdbcUtil.getConnectionWithDB();
 		Statement stmt = con.createStatement();
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the customet id for the entire details of the customer");
+		System.out.println("Enter the customer id for the entire details of the customer");
 		int id1 = sc.nextInt();
 		ResultSet rs = stmt.executeQuery("select * from customerinfo where cust_id="+id1);
 		System.out.println(rs);

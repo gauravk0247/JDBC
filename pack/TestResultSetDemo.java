@@ -39,7 +39,7 @@ public class TestResultSetDemo {
 			String email=rs.getString(5);
 			System.out.println(id+" "+name+" "+ph+" "+addr+" "+email);
 			}*/
-		System.out.println("fetching absulate record by passing ");
+		System.out.println("fetching absolute record by passing ");
 		rs.absolute(3);
 		System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getLong(3)+" "+rs.getString(4));
 		
