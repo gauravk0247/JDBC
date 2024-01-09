@@ -9,7 +9,7 @@ import java.util.Scanner;
 import utility.JdbcUtil;
 
 public class TestJdbcDemo9 {
-	// Delete train data from the our databse
+	// Fetch max price of train in our databse
 	public static Train fetchTrainWithMaxPrice()
 	{ 
 		Train tObj = null;
@@ -40,6 +40,3 @@ public class TestJdbcDemo9 {
 		System.out.println(t1.getTrainNumber()+" "+t1.getTrainName()+" "+t1.getTrainSource()+" "+t1.getTrainDestination()+" "+t1.getTrainStatus()+" "+t1.getTrainRunningDate()+" "+t1.getTrainPrice());
 	}
 }
-
-// public static Map<Double, Train> 
-//{}

@@ -200,7 +200,7 @@ public class TrainApp {
 		 * appropriate parameter.
 		 * 6. What is the return type of the method.
 		 */
-		Train train=new Train(2021, "Rajdhani Express", "Mumbai","new Delhi", "running", LocalDate.of(2021, 01, 13), 2000.00);
+		Train train=new Train(2020, "Sinnar Express", "Sinnar","Pune", "running", LocalDate.of(2020, 03, 11), 2500.00);
 		Train t = addTrain(train);
 		if(t!=null) {
 			System.out.println(t.getTrainNumber()+" "+t.getTrainName()
