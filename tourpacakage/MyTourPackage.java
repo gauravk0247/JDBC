@@ -47,9 +47,11 @@ public class MyTourPackage {
 		String line = null;
 		
 		List<Package> list = new ArrayList();
+		String criteria = "[0-9]{4}[/]{1}[A-Z]{2}";
 		while((line=br.readLine())!=null) {
 			String[] str = line.split(",");
 			String pID = str[0];
+			if(pID.matches(criteria)) {
 			String source = str[1];
 			String dest = str[2];
 			int nDay = Integer.parseInt(str[3]);
@@ -65,7 +67,7 @@ public class MyTourPackage {
              ps.setInt(4, pack.getNod());
              ps.setDouble(5, pack.getPackageCost());
              ps.executeUpdate();
-			
+			}
 		}
 		}catch(Exception e) {
 			System.out.println(e);
