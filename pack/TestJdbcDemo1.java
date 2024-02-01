@@ -7,7 +7,8 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 
-public class TestJdbcDemo1 {
+public class 
+ {
 
 	public static void main(String[] args) {
 		try {
